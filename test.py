@@ -1,1 +1,1 @@
-print('Hei Tormod')
+print('Hei')
