@@ -1,5 +1,6 @@
-print('Hei')
+import yfinance as yf
 
-print("Shag")
+ticker = yf.Ticker("AAPL")
+data = ticker.history(period="1d", interval="1h")  # Siste dag, 1-minutts intervaller
 
-print('lol')
+print(data[["Close"]])
